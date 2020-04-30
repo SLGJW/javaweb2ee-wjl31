@@ -8,6 +8,7 @@
 </head>
 <body>
 	<% 
+	response.setContentType("text/html;charset=UTF-8");
 	String name = request.getParameter("name");
 	String age = request.getParameter("age");
 	String address = request.getParameter("address");

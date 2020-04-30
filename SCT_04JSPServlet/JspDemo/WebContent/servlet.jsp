@@ -8,10 +8,12 @@
 </head>
 <body>
 	<%
+		response.setContentType("text/html;charset=UTF-8");//设置页面显示的编码
+		request.setCharacterEncoding("utf-8");
 		String name =  request.getParameter("name");
 		String age =  request.getParameter("age");
 		String address =  request.getParameter("address");
-		request.getRequestDispatcher("/show.jsp").forward(request, response);
 	%>
+	<a href= "show.jsp?name='<%=name %>'&age='<%=age %>'&address='<%=address %>'">点击我传递数据</a>
 </body>
 </html>
