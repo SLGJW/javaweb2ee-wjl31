@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"
+    >
+    <!-- 配置表与实体对象的关系 -->
+<hibernate-mapping package="student.domain">
+	<class name="Student" table="student">
+		<id name="sid" >
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="sname" column="sname"></property>
+		<property name="sbirthday" column="sbirthday"></property>
+		<property name="ssex" column="ssex"></property>
+	</class>
+
+</hibernate-mapping>
